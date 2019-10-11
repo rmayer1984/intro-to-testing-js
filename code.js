@@ -4,7 +4,12 @@ function helloWorld() {
 }
 
 function sayHello(input) {
+    // var input = parseFloat(input);
+    if ((typeof input !== "string") || (input === " ")) {
+        return "Hello, World!";
+    } else {
         return ("Hello, " + input + "!");
+    }
 }
 
 // function sum(num1, num2) {
