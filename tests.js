@@ -13,3 +13,24 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+describe('sayHello', function(){
+    it('Should be a defined function', function(){
+        expect(typeof sayHello).toBe('function');
+    });
+});
+
+
+
+// //unit test for sum function
+//
+// describe('sum', function() {
+//     it('should be a defined function' , function() {
+//         expect(typeof sum).toBe('function');
+//     });
+//     it('should return a number when called', function(){
+//         expect(typeof sum()).toBe("number");
+//     });
+//     it('should return sum of numbers when executed', function(){
+//         expect()
+//     });
+// });
