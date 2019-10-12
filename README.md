@@ -5,6 +5,7 @@ This is an introduction to automated testing in JavaScript. The idea behind auto
 
 Specifically, we will be working with "unit tests", as our type of test. A unit means the smallest possible block of functionality. Most frequently, this means a single user-defined function in code. Unit tests aim to test the building blocks of functionality. In this way, they test application code from the inside-out. Other types of test such as end-to-end tests test the entire application from the outside-in
 
+
 Additionally, we will be using a process called Test Driven Development, commonly called TDD, where we author tests to assert expected vs. actual results before authoring the code that produces those results. While TDD can be used on a variety of types of tests, we'll be applying the TDD workflow and process with unit tests.
 
 ## Key Vocabulary

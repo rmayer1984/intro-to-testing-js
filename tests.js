@@ -88,9 +88,9 @@ describe('isEven', function() {
     it('Should return boolean no matter what', function() {
         expect(typeof isEven()).toBe('boolean');
     });
-    // it('should return the boolean true when "8" executed', function() {
-    //     expect(isEven("8")).toBe(true);
-    // });
+    it('should return the boolean true when "8" executed', function() {
+        expect(isEven("8")).toBe(true);
+    });
     it('should return true when negative even number is executed', function(){
        expect(isEven(-4)).toBe (true);
     });
@@ -117,11 +117,11 @@ describe('isEven', function() {
     });
 });
 // unit test for isVowel
-describe('isVowel', function() {
+describe('isVowel', function(){
     it('should be a defined function', function () {
         expect(typeof isVowel).toBe('function');
     });
-    it('should return a boolean when called', function () {
+    it('should return a boolean when called', function (){
         expect(typeof isVowel()).toBe("boolean");
     });
     it('should return true when "a" is executed', function(){
@@ -136,7 +136,7 @@ describe('isVowel', function() {
     it('should return false when "4" is executed', function(){
         expect(isVowel("4")).toBe (false);
     });
-    it('should return flase  when "true" is executed', function(){
+    it('should return falsse  when "true" is executed', function(){
         expect(isVowel(true)).toBe (false);
     });
     it('should return false when "a" is executed', function(){
@@ -147,5 +147,35 @@ describe('isVowel', function() {
     });
     it('should return false when isVowel() is executed', function(){
         expect(isVowel()).toBe (false);
+    });
+});
+//unit test for add function
+describe('add',function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should return a number when called', function (){
+    expect(typeof add()).toBe('number');
+    });
+    it('should return 5 when (2 + 3) executed', function (){
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return -12 when (-3 + -9) executed', function (){
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should return 11 when ("5" + 6) executed', function (){
+        expect(add("5",6)).toBe(11);
+    });
+    it('should return a 6 when executed', function (){
+        expect(add(-"4","10")).toBe(6);
+    });
+    it('should return NaN when ("banana", "split") is executed', function (){
+        expect(add("banana","split")).toBe(NaN);
+    });
+    it('should return NaN when (2, "apples") is executed', function (){
+        expect(add(2,"apples")).toBe(NaN);
+    });
+    it('should return a 6 when executed', function (){
+        expect(add()).toBe(NaN);
     });
 });
