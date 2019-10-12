@@ -53,9 +53,6 @@ describe('sayHello', function(){
 
 
 });
-
-
-
 //unit test for isFive function
 
 describe('isFive', function() {
@@ -136,7 +133,7 @@ describe('isVowel', function(){
     it('should return false when "4" is executed', function(){
         expect(isVowel("4")).toBe (false);
     });
-    it('should return falsse  when "true" is executed', function(){
+    it('should return false  when "true" is executed', function(){
         expect(isVowel(true)).toBe (false);
     });
     it('should return false when "a" is executed', function(){
