@@ -65,15 +65,58 @@ describe('isFive', function() {
     it('should return a boolean when called', function() {
         expect(typeof isFive()).toBe('boolean');
     });
-    it('should return true when 5 when IS EXECUTED', function() {
-        expect(typeof isFive(5)).toBe('boolean');
-    });
+    it('should return true when 5 when is executed', function() {
+        expect(isFive(5)).toBe(true);
+    });  //need to test for true
 
     it("should never return 'undefined' when called", function() {
         expect(isFive()).not.toBe(undefined);
     });
     it('should return the boolean true when executed', function() {
-        expect(typeof isFive("5")).toBe('boolean');
+        expect(isFive("5")).toBe(true);
+    });
+    it('should return false when " " is executed', function() {
+        expect(isFive(" ")).toBe(false);
     });
 });
 
+// unit test for isEven
+describe('isEven', function() {
+    it('should be a defined function', function(){
+       expect(typeof isEven).toBe('function');
+   });
+    it('Should return boolean no matter what', function() {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return the boolean true when "8" executed', function() {
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return true when negative even number is executed', function(){
+       expect(isEven(-4)).toBe (true);
+    });
+    it('should return false when odd number is executed', function() {
+        expect(isEven(-3)).toBe (false);
+    });
+    it('should return false when "banana" is executed', function() {
+        expect(isEven("banana")).toBe (false);
+    });
+    it('should return false when " " is executed', function() {
+        expect(isEven(" ")).toBe(false);
+    });
+    it('should return false when INFINITY is executed', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when isEven(true) is executed', function() {
+        expect(isEven(true)).toBe(false);
+    });
+    it('should return false when isEven(flase) is executed', function() {
+        expect(isEven(false)).toBe(false);
+    });
+    it('should return false when isEven() is executed', function() {
+        expect(isEven()).toBe(false);
+    });
+
+
+
+
+});

@@ -3,6 +3,7 @@ function helloWorld() {
     return "Hello, World!";
 }
 
+//SAYHELLO FUNCTION
 function sayHello(input) {
     // var input = parseFloat(input);
     if ((typeof input !== "string") || (input === " ") ) {
@@ -12,8 +13,20 @@ function sayHello(input) {
         return ("Hello, " + input + "!");
     }
 }
-//possible if statement: || (typeof parseFloat(input) === "number")
 
+//ISFIVE FUNCTION
 function isFive(x) {
     return  parseFloat(x) === 5;
+}
+//ISEVEN FUNCTION
+function isEven(x) {
+    if ((typeof x !== "number") || x === " ") {
+        return false;
+    }
+    // else if ((parseFloat(x)) % 2 === 0) {
+    //     return true;
+    // }
+    else {
+        return (x % 2 === 0);
+    }
 }
