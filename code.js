@@ -5,14 +5,15 @@ function helloWorld() {
 
 function sayHello(input) {
     // var input = parseFloat(input);
-    if ((typeof input !== "string") || (input === " ")) {
+    if ((typeof input !== "string") || (input === " ") ) {
         return "Hello, World!";
-    } else {
+    }
+    else {
         return ("Hello, " + input + "!");
     }
 }
+//possible if statement: || (typeof parseFloat(input) === "number")
 
-// function sum(num1, num2) {
-//     return  num1 + num2;
-// }
-// console.log(sum(2, 2));
+function isFive(x) {
+    return  parseFloat(x) === 5;
+}
